@@ -1,0 +1,11 @@
+<ul>
+    $if(posts)
+        $for(posts)$
+            <li>
+                <a href="$url$">$title$</a> - $date$
+            </li>
+        $endfor$
+    $else$
+        <li>No posts!</li>
+    $endif$
+</ul>
